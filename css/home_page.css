@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 1024px;
+  height: 100vh;
+}
+
+.nav {
+  background-color: #000000;
+  width: 1024px;
+  height: 70px;
+  color: #9b9b9b;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: HelveticaNeue-Bold;
+}
+
+.title:hover,
+.page-links li:hover,
+.admin:hover {
+  color: #fff;
+}
+
+.page-links li:hover {
+  color: #fff;
+  border-bottom: 4px solid #fff;
+  margin-bottom: -25px;
+}
+
+.page-links {
+  list-style: none;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: -352px;
+}
+
+.title {
+  margin-left: 42px;
+}
+.admin {
+  margin-right: 42px;
+}
+
+.content {
+  background-color: #f2f2f2;
+  height: 1158px;
+  padding: 0px 42px;
+}
+
+/* overview area */
+.three-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #9b9b9b;
+  font-size: 16px;
+}
+
+.overview-tit {
+  padding: 30px 0px 20px 0px;
+  font-family: HelveticaNeue-Bold;
+  color: #000000;
+  font-size: 24px;
+}
+
+.data-display {
+  display: flex;
+  justify-content: space-around;
+}
+
+.data-ending {
+  margin: 0px 10px;
+}
+
+/* 選擇週期的下拉選單 */
+.period-select {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  top:122px;
+  right:41px;
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  text-align: center;
+  width: 125px;
+  height: 200px;
+  box-shadow:1px 2px 10px 0px #9B9B9B ;
+  border-radius: 2px;
+}
+
+.period-list{
+  padding-left: 0;
+}
+
+.period-list li {
+    display: block;
+    width: 125px;
+    height: 40px; 
+    line-height: 40px; 
+}
+
+.period-list li:hover {
+    color:#fff ;
+    background-color: #000;
+  }
+  
+.fa-caret-right,
+.fa-caret-down {
+  color: black;
+}
+
+.box {
+  width: 300px;
+  height: 138px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-first {
+  display: flex;
+  line-height: 19px;
+}
+
+.overview-text {
+  margin-left: 8px;
+  font-family: HelveticaNeue-Medium;
+  font-size: 16px;
+}
+
+.row-second {
+  margin-top: 16px;
+  font-family: HelveticaNeue-Bold;
+  font-size: 36px;
+}
+
+.revenue-num {
+  color: #7ed321;
+}
+
+.cost-num {
+  color: #d0021b;
+}
+
+.income-num {
+  color: #4a90e2;
+}
+
+/* activity */
+.activity {
+  width: 940px;
+  height: 406px;
+  background-color: #fff;
+  margin: 18px 0px 20px 0px;
+}
+
+.txt-and-order {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 交易 */
+.txn-area {
+  width: 460px;
+  height: 456px;
+  background-color: #fff;
+}
+
+.txn-tit,
+.order-tit {
+  font-family: HelveticaNeue-Bold;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 30px 0px 0px 40px;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 30px 40px 0px 40px;
+}
+
+.card-info:not(:last-child) {
+  border-bottom: 4px solid #ebebeb;
+  padding-bottom: 18px;
+}
+
+.card-img .fa-brands {
+  font-size: 45px;
+}
+
+.card-title {
+  font-family: HelveticaNeue-Medium;
+  color: #9b9b9b;
+  font-size: 16px;
+}
+
+.card-transaction {
+  font-family: HelveticaNeue-Medium;
+  font-size: 20px;
+}
+
+/* 最新商品 */
+.latest-order {
+  width: 460px;
+  height: 456px;
+  background-color: #fff;
+  font-family: HelveticaNeue-Bold;
+}
+
+.order-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+.order-card:not(:last-child) {
+  border-bottom: 3px solid #ebebeb;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.order-img img {
+  width: 100px;
+  height: 100px;
+}
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
+  width: 180px;
+}
+
+.product-name {
+  font-size: 24px;
+  font-family: HelveticaNeue-Bold;
+}
+
+.time,
+.person {
+  display: flex;
+  align-content: center;
+  color: #9b9b9b;
+  width: 200px;
+}
+
+.latest-order .time-txt,
+.latest-order .person-text,
+.latest-order .total-text {
+  font-family: HelveticaNeue;
+  font-size: 18px;
+}
+
+.latest-order .total-num {
+  font-size: 24px;
+}
+
+.time-img .fa-solid {
+  color: #757575;
+  margin-right: 10px;
+}
+
+.person-img .fa-solid {
+  color: #757575;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.order-total {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 80px;
+  width: 50px;
+}
